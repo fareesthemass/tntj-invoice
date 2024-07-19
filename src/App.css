@@ -1,38 +1,294 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #09061A;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(175, 121, 121, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.whatwant{
+  display: flex;
+  justify-content: space-around;
+}
+
+.masjid{
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: url(assets/mosque\ 3.jpg);
+  background-repeat: no-repeat;
+  color: #32013D;
+  margin: 30px;
+}
+
+.masjid h3{
+  background-color: aliceblue;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+.donation{
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: url(assets/back.jpg);
+  background-repeat: no-repeat;
+  color: #32013D;
+  margin: 30px;
+}
+
+.donation h3{
+  background-color: aliceblue;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.donation:hover{
+  cursor: pointer;
+  box-shadow: rgba(202, 202, 202, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.3s;
+  border: #32013D solid 2px;
+  border-radius: 20px
+}
+
+
+.billing__masjid{
+  display: flex;
+  flex-direction: column;
+
+}
+.masjid:hover{
+  cursor: pointer;
+  box-shadow: rgba(202, 202, 202, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.3s;
+  border: #32013D solid 2px;
+  border-radius: 20px;
+}
+
+.date{
+  text-align: end;
+
+}
+.persondetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.persondetails input{
+  
+  text-align-last: center;
+}
+.persondetails input:focus{
+outline: none;
+}
+.persondetails input{
+  padding: 5px;
+  border: none;
+  border: yellowgreen 2px solid;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.persondetails button{
+  background-color: #32013D;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border:white 2px solid;
+  margin: 10px;
+}
+
+
+.details{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.fullitems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; 
+  background-color: white;
+  color: black;
+}
+
+
+.contactBox{
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.billcutBox{
+  border:none;
+  border: green 5px solid;
+  padding: 10px;
+
+}
+
+.billcut__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.billcut__bottom__amt{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  border: green 2px solid;
+  padding: 5px;
+}
+
+.person__details{
+  font-size: larger;
+}
+
+.printbtn{
+  text-align: center;
+}
+.printbtn button{
+  background-color: #32013D;
+  border: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border:white 2px solid
+}
+
+
+.cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.cover__white{
+  background: url(./assets//loginback2.jpg);
+  background-size: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin:10px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover__input{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input{
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+border: white 2px solid;
+border-radius: 10px;
+margin-top: 5px;
+color: white;
+
+}
+.input:focus{
+  outline: none;
+  color: white;
+ 
+}
+.cover__btn{
+  padding: 10px;
+  width: 25%;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #32013D;
+  color: white;
+  border: none;
+  border: white 2px solid;
+}
+
+.cover__btn:hover{
+  background-color: white;
+  border: #32013D 2px solid;
+  color: #09061A;
+  transition: 1s;
+}
+@media screen and (max-width:700px) {
+  .navbar h2 {
+    font-size: 4vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ .fullitems{
+  font-size: 1.1vw;
+ }
+ .billcut__img{
+  width: 30px;
+ }
+ .billcut__bottom__amt{
+  text-align: left;
+  font-size: 1.1vw;
+  font-weight: 600;
+  border: green 2px solid;
+  padding: 5px;
+}
+
+.signimg{
+  width:40px
+}
+
 }

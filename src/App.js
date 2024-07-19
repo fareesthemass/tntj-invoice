@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Login from "./Login";
+import Navbar from "./Navbar";
+import Content from "./Content";
+import Donation from "./Donation";
+import Printdonation from "./Printdonation";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Print from './Print';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+    <Navbar />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login/>}></Route>
+        <Route path="/content" element={<Content />} />
+        <Route path="/print" element={<Print />} />
+        <Route path="/donation" element={<Donation/>}></Route>
+        <Route path="/printdonation" element={<Printdonation/>}/>
+      </Routes>
+    </Router>
+  </>)
 }
 
-export default App;
+export default App
