@@ -217,10 +217,15 @@ outline: none;
 }
 
 .cover__white{
-  background: url(./assets//loginback2.jpg);
-  background-size: 100%;
-  padding: 10px;
-  border-radius: 10px;
+  background-color: #09061A;
+  border: white 0.5px solid;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
+ color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
   margin:10px;
   width: 300px;
   text-align: center;
@@ -241,15 +246,15 @@ outline: none;
   background-color: transparent;
   padding: 10px;
   border: none;
-border: white 2px solid;
+border: #ffffff 1px solid;
 border-radius: 10px;
 margin-top: 5px;
-color: white;
+color:#eeeeee;
 
 }
 .input:focus{
   outline: none;
-  color: white;
+  color:#fefefe;
  
 }
 .cover__btn{
@@ -260,7 +265,7 @@ color: white;
   background-color: #32013D;
   color: white;
   border: none;
-  border: white 2px solid;
+  border: white 1px solid;
 }
 
 .cover__btn:hover{

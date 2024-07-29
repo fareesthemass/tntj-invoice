@@ -1,5 +1,4 @@
-import flag from './assets/flag.webp'
-import './App.css'
+import flag from '../assets/flag.webp'
 function Navbar(){
 return(
     <div className='navbar'>

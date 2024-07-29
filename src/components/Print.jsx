@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import img from './assets/flag.webp'
-import sign from "./assets/hamdan-sign.png"
+import img from '../assets/flag.webp'
+import sign from "../assets/hamdan-sign.png"
 
 function Print() {
     const location = useLocation();

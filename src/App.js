@@ -1,10 +1,11 @@
-import Login from "./Login";
-import Navbar from "./Navbar";
-import Content from "./Content";
-import Donation from "./Donation";
-import Printdonation from "./Printdonation";
+import Login from "./components/Login";
+import Navbar from "./components/Navbar";
+import Content from "./components/Content";
+import Donation from "./components/Donation";
+import Printdonation from "./components/Printdonation";
+import Masjid from "./components/Masjid";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Print from './Print';
+import Print from './components/Print';
 function App() {
   return (<>
     <Navbar />
@@ -15,6 +16,7 @@ function App() {
         <Route path="/print" element={<Print />} />
         <Route path="/donation" element={<Donation/>}></Route>
         <Route path="/printdonation" element={<Printdonation/>}/>
+        <Route path="/masjid" element={<Masjid/>}/>
       </Routes>
     </Router>
   </>)

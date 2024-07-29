@@ -28,7 +28,7 @@ function Login(){
     return(
         <div className="cover">
         <div className="cover__white">
-            <h1 className="text-2xl font-medium">السَّلَامُ عَلَيْكُمْ 👋</h1>
+            <h1 className="text-2xl font-medium">السَّلَامُ عَلَيْكُمْ👋</h1>
            {login ? <p>I help you manage your Invoice after you login :)</p> : <p style={{color:'red',backgroundColor:"white", padding:'5px',borderRadius:"10px"}}>Please enter correct username and password!</p> }
 
             

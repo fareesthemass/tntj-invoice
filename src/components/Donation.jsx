@@ -54,7 +54,7 @@ function Donation() {
                 </tr>
                 <tr>
                     <td><span>Amount:</span></td>
-                    <td><input type="text" placeholder="Amount" required value={amount} onChange={handleamount} /></td>
+                    <td><input type="number" placeholder="Amount" required value={amount} onChange={handleamount} /></td>
                 </tr>
 
             </table>

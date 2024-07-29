@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom"
-import img from './assets/flag.webp'
-import sign from './assets/hamdan-sign.png'
-import './App.css'
+import img from '../assets/flag.webp'
+import sign from '../assets/hamdan-sign.png'
 function Printdonation() {
     const location = useLocation()
     const { name, purpose, amount, formatteddate } = location.state || {}
